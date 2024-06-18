@@ -1,14 +1,22 @@
-console.log("Header.component.plugin.js is loaded");
+// packages/scandi-dark-theme/src/plugin/Header.component.plugin.js
+import ModeToggleButton from "../component/ModeToggleButton";
+import "./Header.style.plugin";
 
-export const testPlugin = (args, callback, instance) => {
-  console.log("Extension is working!");
-  return callback(...args);
+export const renderTopMenu = (args, callback, instance) => {
+    return (
+        <>
+            {callback(...args)}
+            <div block="Header" elem="DarkModeToggle">
+                <ModeToggleButton />
+            </div>
+        </>
+    );
 };
 
 export default {
-  "Component/Header/Component": {
-    "member-function": {
-      render: testPlugin,
+    "Component/Header/Component": {
+        "member-function": {
+            renderTopMenu,
+        },
     },
-  },
 };
