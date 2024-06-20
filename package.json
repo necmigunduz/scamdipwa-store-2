@@ -15,7 +15,8 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-redux": "8.0.2",
-        "@babel/plugin-transform-typescript": "7.20.2"
+        "@babel/plugin-transform-typescript": "7.20.2",
+        "scandi-dark-theme": "file:packages/scandi-dark-theme"
     },
     "devDependencies": {
         "@babel/plugin-proposal-private-property-in-object": "7.21.11",
@@ -33,7 +34,9 @@
     },
     "scripts": {
         "start": "scandipwa-scripts start",
-        "build": "scandipwa-scripts build"
+        "build": "scandipwa-scripts build",
+        "postinstall": "scandipwa-scripts link",
+        "postupdate": "scandipwa-scripts link"
     },
     "browserslist": {
         "production": [
