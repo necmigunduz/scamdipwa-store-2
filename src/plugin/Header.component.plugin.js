@@ -1,14 +1,22 @@
-export const testPlugin = (args, callback, _instance) => {
-    // eslint-disable-next-line
-    console.log('Extension is working!');
+import ModeToggleButton from '../component/ModeToggleButton';
 
-    return callback(...args);
+import './Header.style.plugin';
+// eslint-disable-next-line arrow-body-style
+export const renderTopMenu = (args, callback, __instance) => {
+    return (
+        <>
+          { callback(...args) }
+          <div block="Header" elem="DarkModeToggle">
+            <ModeToggleButton ModeToggleButton="Button" />
+          </div>
+        </>
+    );
 };
 
 export default {
     'Component/Header/Component': {
         'member-function': {
-            render: testPlugin,
+            renderTopMenu,
         },
     },
 };

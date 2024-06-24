@@ -28,14 +28,10 @@
     },
     "include": [
         "./src/**/*",
-        "src/**/*",
-        "node_modules/@scandipwa/scandipwa/src/**/*"
+        "src/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "./node_modules",
         "./node_modules/*",
-        "node_modules/@scandipwa/scandipwa/*",
-        "node_modules/@scandipwa/scandipwa/src/component/*"
+        "./node_modules/@scandipwa/scandipwa/**/*"
     ]
 }
