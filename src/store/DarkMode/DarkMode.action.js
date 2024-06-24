@@ -1,7 +1,7 @@
 export const DARKMODE_ENABLE = 'DARKMODE_ENABLE';
 
-/** @namespace ScandiDarkTheme/Store/DarkMode/Action/enableDarkMode */
+/** @namespace myStore/Store/DarkMode/Action/enableDarkMode */
 export const enableDarkMode = (enabled) => ({
     type: DARKMODE_ENABLE,
-    enabled
+    enabled,
 });
