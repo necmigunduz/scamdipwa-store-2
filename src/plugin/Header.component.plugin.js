@@ -7,7 +7,7 @@ export const renderTopMenu = (args, callback, __instance) => {
         <>
           { callback(...args) }
           <div block="Header" elem="DarkModeToggle">
-            <ModeToggleButton ModeToggleButton="Button" />
+            <ModeToggleButton />
           </div>
         </>
     );
