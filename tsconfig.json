@@ -28,7 +28,8 @@
     },
     "include": [
         "./src/**/*",
-        "src/**/*"
+        "src/**/*",
+        "node_modules/@scandipwa/scandipwa/src/**/*"
     ],
     "exclude": [
         "node_modules",
