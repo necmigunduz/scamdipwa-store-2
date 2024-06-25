@@ -29,7 +29,13 @@
     "include": [
         "./src/**/*",
         "src/**/*",
-        "node_modules/@scandipwa/scandipwa/src/**/*"
+        "node_modules/@scandipwa/scandipwa/src/**/*",
+        "packages/scandi-dark-theme/src/store/DarkMode",
+        "packages/scandi-dark-theme/src/plugin/App.component.plugin.js",
+        "packages/scandi-dark-theme/src/plugin/getStaticReducers.plugin.js",
+        "packages/scandi-dark-theme/src/plugin/Header.component.plugin.js",
+        "packages/scandi-dark-theme/src/plugin/Image.component.plugin.js",
+        "packages/scandi-dark-theme/src/component"
     ],
     "exclude": [
         "node_modules",

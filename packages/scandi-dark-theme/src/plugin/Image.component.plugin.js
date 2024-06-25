@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 
-import { ColorInverterComponent } from 'Component/ColorInverter/ColorInverter.component';
-
+import { ColorInverterComponent } from '../component/ColorInverter/ColorInverter.component';
 const mapStateToProps = (state) => ({
     isDarkModeEnabled: state.DarkModeReducer.enabled,
 });
