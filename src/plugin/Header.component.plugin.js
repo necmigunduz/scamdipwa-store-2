@@ -5,10 +5,10 @@ import './Header.style.plugin';
 export const renderTopMenu = (args, callback, __instance) => {
     return (
         <>
-          { callback(...args) }
-          <div block="Header" elem="DarkModeToggle">
-            <ModeToggleButton />
-          </div>
+            <div block="Header" elem="DarkModeToggle">
+                <ModeToggleButton />
+            </div>
+            {callback(...args)}
         </>
     );
 };
