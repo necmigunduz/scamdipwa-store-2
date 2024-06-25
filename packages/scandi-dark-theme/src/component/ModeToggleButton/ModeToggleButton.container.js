@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { enableDarkMode } from 'Store/DarkMode/DarkMode.action';
+import { enableDarkMode } from '../../store/DarkMode/DarkMode.action';
 
 import ModeToggleButton from './ModeToggleButton.component';
 

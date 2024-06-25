@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { DarkModeProviderComponent } from '../component/DarkModeProvider/DarkModeProvider.component';
+import { DarkModeProviderComponent } from '../../packages/scandi-dark-theme/src/component/DarkModeProvider/DarkModeProvider.component';
 // Assuming you have a selector to get the enabled state from DarkModeReducer
 const mapStateToProps = (state) => ({
     isDarkModeEnabled: state.DarkModeReducer.enabled,

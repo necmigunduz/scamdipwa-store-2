@@ -1,4 +1,4 @@
-import ModeToggleButton from '../component/ModeToggleButton';
+import ModeToggleButton from '../../packages/scandi-dark-theme/src/component/ModeToggleButton';
 
 import './Header.style.plugin';
 // eslint-disable-next-line arrow-body-style
