@@ -3,7 +3,7 @@
 import { getStaticReducers as baseGetStaticReducers } from 'SourceStore/index';
 
 // import our own reducer
-import DarkModeReducer from './DarkMode/DarkMode.reducer';
+import DarkModeReducer from '../../packages/scandi-dark-theme/src/store/DarkMode/DarkMode.reducer';
 
 // define getStaticReducers.
 // this is a function that returns an object of all the reducers in the app.

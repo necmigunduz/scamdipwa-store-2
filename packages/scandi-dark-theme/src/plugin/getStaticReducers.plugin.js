@@ -1,5 +1,4 @@
-import DarkModeReducer from "../store/DarkMode/DarkMode.reducer";
-import injectStaticReducers from "Store/";
+import injectStaticReducers from '../../../../src/store/index';
 // export const getStaticReducers = (args, callback) => ({
 //   ...callback(args),
 //   DarkModeReducer,
